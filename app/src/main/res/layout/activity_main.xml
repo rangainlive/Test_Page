@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/backdrop"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_140sdp"
+                android:src="@drawable/checklist"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/_60ssp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/tree"
+                android:contentDescription="@string/todo" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test_series"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="@string/take_tests_and"
+                android:textSize="@dimen/_13ssp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="@string/know_your_standings_in_the_race"
+                android:textSize="@dimen/_13ssp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/testListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_20ssp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>

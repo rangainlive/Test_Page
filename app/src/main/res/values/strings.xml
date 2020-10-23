@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="test_series">Test Series</string>
+    <string name="take_tests_and">Take Tests and</string>
+    <string name="know_your_standings_in_the_race">know your standings in the race.</string>
+    <string name="todo">TODO</string>
+    <string name="tests">  Test(s)</string>
+</resources>
