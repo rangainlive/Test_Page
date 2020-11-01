@@ -23,7 +23,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     private static final String TEST_URL = "http://192.168.43.47/MyApi/api.php";
     RecyclerView recyclerView;
-    TestAdapter testAdapter;
+    TestAdaptar testAdaptar;
     List<Test> testList;
 
     @Override
@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         testList = new ArrayList<>();
+
         recyclerView = (RecyclerView) findViewById(R.id.testListView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -55,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
                         Test test = new Test(id, test_name, no_of_test);
                         testList.add(test);
                     }
-                    testAdapter = new TestAdapter(MainActivity.this, testList);
-                    recyclerView.setAdapter(testAdapter);
+                    testAdaptar = new TestAdaptar(MainActivity.this, testList);
+                    recyclerView.setAdapter(testAdaptar);
 
                 } catch (JSONException e) {
                     e.printStackTrace();
